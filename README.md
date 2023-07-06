@@ -51,6 +51,32 @@ npx create-next-app@13.2.3
 ### Create file name = types.d.ts for class 
 Example class `user`
 
+```md
+type User = {
+    "id": number,
+    "name": string,
+    "username": string,
+    "email": string,
+    "address": {
+        "street": string,
+        "suite": string,
+        "city": string,
+        "zipcode": string,
+        "geo": {
+        "lat": string,
+        "lng": string
+        }
+    },
+    "phone": string,
+    "website": string,
+    "company": {
+        "name": string,
+        "catchPhrase": string,
+        "bs": string
+    } 
+}
+```
+
 ### Create folder `users` in folder app => localhost:3000/users
 Create file `page.tsx` in folder users
 
